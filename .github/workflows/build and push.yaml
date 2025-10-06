@@ -22,4 +22,4 @@ jobs:
          uses: docker/build-push-action@v6
          with:
             push: true
-            tags: ${{ env.user }}/myfirstrepo:${{ github.sha }}
+            tags: ${{ env.user }}/weather-app:${{ github.sha }}
