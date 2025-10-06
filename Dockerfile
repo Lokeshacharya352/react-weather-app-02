@@ -3,6 +3,9 @@ FROM node:18-alpine as build
 
 WORKDIR /app
 
+# Install dependencies required for building React app
+RUN apk add --no-cache python3 make g++
+
 COPY package*.json ./
 RUN npm install
 
